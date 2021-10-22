@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="mostrarToast"
+        android:text="@string/button_toast"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/button_toast"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="@string/show_count"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="200sp" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_toast"
+        android:onClick="aumentarCuenta"
+        android:text="@string/button_count"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>
